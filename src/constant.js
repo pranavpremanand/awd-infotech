@@ -39,7 +39,7 @@ export const companyDetails = {
   phone: "+0000000000",
   address:
     "CB1604 Salarpuria Greenage Bommanahalli Hosur road Bangalore 560068",
-  email: "abc@xyz.com",
+  email: "arvin3ds@gmail.com",
   linkedin: "",
   instagram: "",
   twitter: "",

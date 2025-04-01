@@ -1,5 +1,4 @@
 import React from "react";
-import bannerImg from "../assets/images/banner.webp";
 import banner from "../assets/videos/banner.mp4";
 import aboutImg from "../assets/images/aboutus-img3.webp";
 import { Link } from "react-router-dom";
@@ -148,7 +147,7 @@ const Home = () => {
                   src={aboutImg}
                   width="600"
                   height="600"
-                  className="object-cover h-full rounded-xl shadow-2xl"
+                  className="object-cover h-full rounded-xl shadow-2xl w-full"
                   alt=""
                 />
               </div>

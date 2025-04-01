@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import {
   FaArrowLeft,
   FaShareAlt,
@@ -9,7 +9,6 @@ import {
 } from "react-icons/fa";
 import { industriesBlogs, servicesBlogs } from "../blogs";
 import { createUrlParam } from "../utils/helper";
-import { allServices } from "../constant";
 
 const WebsiteHeader = React.lazy(() =>
   import("../components/website/WebsiteHeader")
@@ -56,7 +55,10 @@ const BlogDetails = () => {
         <div className="wrapper">
           <div className="">
             {/* Blog Featured Image */}
-            <div className="max-w-4xl mx-auto mb-8 rounded-xl overflow-hidden shadow-md">
+            <div
+              data-aos="fade-up"
+              className="max-w-4xl mx-auto mb-8 rounded-xl overflow-hidden shadow-md"
+            >
               <img
                 src={blog.image}
                 alt={blog.title}
@@ -67,20 +69,24 @@ const BlogDetails = () => {
 
             {/* Blog Content */}
             <div
+              data-aos="fade-up"
               className="prose prose-lg max-w-none"
               dangerouslySetInnerHTML={{ __html: blog.html }}
             />
 
             {/* Blog Actions */}
-            <div className="mt-10 flex flex-wrap justify-between items-center gap-4 border-t pt-6">
+            <div
+              data-aos="fade-up"
+              className="mt-10 flex flex-wrap justify-between items-center gap-4 border-t pt-6"
+            >
               {/* Back Button */}
-              <a
-                href="/industries"
+              <Link
+                to="/industries"
                 className="inline-flex items-center text-primary hover:text-primary-dark transition-colors"
               >
                 <FaArrowLeft className="mr-2" />
                 Back to Industries
-              </a>
+              </Link>
 
               {/* Share Button */}
               <div className="flex items-center space-x-4">
@@ -96,7 +102,7 @@ const BlogDetails = () => {
             </div>
 
             {/* Social Sharing (Alternative) */}
-            <div className="mt-8 pt-6 border-t">
+            <div data-aos="fade-up" className="mt-8 pt-6 border-t">
               <h3 className="text-lg font-medium mb-3">Share this post:</h3>
               <div className="flex space-x-4">
                 <a
