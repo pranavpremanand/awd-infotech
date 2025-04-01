@@ -48,7 +48,7 @@ const AllServices = ({ length }) => {
               </div>
               <button
                 onClick={() => handleSelectServiceToShowDetail(service)}
-                className="primary-btn mt-5 w-fit mx-auto"
+                className="secondary-btn mt-5 w-fit mx-auto"
               >
                 Learn More
               </button>

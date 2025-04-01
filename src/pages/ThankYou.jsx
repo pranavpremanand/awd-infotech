@@ -31,7 +31,7 @@ const ThankYou = () => {
           </p>
           <Link
             to={"/"}
-            className="mt-7 text-sm cursor-pointer primary-btn w-fit"
+            className="mt-7 text-sm cursor-pointer secondary-btn w-fit"
           >
             Home
           </Link>
