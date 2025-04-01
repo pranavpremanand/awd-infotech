@@ -64,7 +64,7 @@ const ContactForm = () => {
   return (
     <div
       id="contact"
-      className="py-[5 bg-[100%_40%] relative min-h-[40rem] flex items-center"
+      className="py-[5rem] bg-[100%_40%] relative min-h-[40rem] flex items-center"
     >
       <div className="absolute top-0 w-full h-full bg-background/70"></div>
       <div className="wrapper relative z-10 w-full">

@@ -100,7 +100,7 @@ const LandingPage = ({ page }) => {
               <img
                 loading="lazy"
                 src={isWebLanding ? webDevAboutImg : appDevAboutImg}
-                className="object-cover h-full rounded-lg"
+                className="object-cover h-full rounded-lg w-full"
                 alt="about us"
                 width="600"
                 height="400"

@@ -69,7 +69,7 @@ html {
     @apply text-base font-light;
   }
   .active-link {
-    @apply text-primary font-medium;
+    @apply text-primary font-bold;
   }
   .primary-btn {
     @apply text-white font-medium cursor-pointer tracking-wide bg-gradient-to-b from-primary to-primary text-sm hover:shadow-primary/10 hover:-translate-y-1 shadow-large shadow-transparent rounded-full px-4 py-3 min-w-[8rem] flex justify-center text-center transition-all duration-300;
@@ -132,7 +132,7 @@ html {
   bottom: 0;
   margin: auto;
   border: 3px solid;
-  border-color: transparent #e56959 #e56959;
+  border-color: transparent #ffc440 #ffc440;
   width: 24px;
   height: 24px;
   border-radius: 50%;

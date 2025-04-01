@@ -30,7 +30,7 @@ const AboutUs = () => {
                 src={aboutImg1}
                 width="600"
                 height="600"
-                className="object-cover aspect-square h-full rounded-xl shadow-2xl"
+                className="object-cover aspect-square w-full h-full rounded-xl shadow-2xl"
                 alt="About AWD Infotech"
               />
             </div>
@@ -100,7 +100,7 @@ const AboutUs = () => {
 
               {/* AWD Meaning Section */}
               <div className="mt-8 w-full">
-                <div className="bg-secondary/10 p-6 rounded-xl border border-secondary/20">
+                <div className="bg-secondary/10 p-5 rounded-xl border border-secondary/20">
                   <h3 className="text-xl font-bold text-primary mb-4">
                     The Meaning Behind <span className="text-white bg-primary px-2 py-1 rounded">AWD</span>
                   </h3>

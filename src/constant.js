@@ -1,11 +1,4 @@
 import logoImg from "./assets/logo/logo.png";
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-
-// all services
-
 import {
   FaCode,
   FaMobileAlt,
@@ -32,8 +25,15 @@ import { ReactComponent as webServiceIcon1 } from "./assets/svgs/services/E-Comm
 import { ReactComponent as webServiceIcon2 } from "./assets/svgs/services/Social Media Websites.svg";
 import { ReactComponent as webServiceIcon3 } from "./assets/svgs/services/Web Development.svg";
 import { ReactComponent as webServiceIcon4 } from "./assets/svgs/services/UIUX Design.svg";
+import { lazy } from "react";
 
 export { logoImg };
+
+const Home = lazy(() => import("./pages/Home"));
+const AboutUs = lazy(() => import("./pages/AboutUs"));
+const ContactUs = lazy(() => import("./pages/ContactUs"));
+const Services = lazy(() => import("./pages/Services"));
+const Industries = lazy(() => import("./pages/Industries"));
 
 export const companyDetails = {
   phone: "+0000000000",
@@ -43,6 +43,7 @@ export const companyDetails = {
   linkedin: "",
   instagram: "",
   twitter: "",
+  facebook: "",
 };
 
 export const routes = [
@@ -60,6 +61,11 @@ export const routes = [
     path: "/services",
     name: "Services",
     element: <Services />,
+  },
+  {
+    path: "/industries",
+    name: "Industries",
+    element: <Industries />,
   },
   {
     path: "/contact-us",
@@ -425,7 +431,7 @@ export const webDevelopmentPortfolio = [
   {
     id: 1,
     title: "5G Homes",
-    image: require("./assets/images/portfolio/web development/5ghomes.webp"),
+    image: require("./assets/images/portfolio/web development/5ghomes.png"),
   },
   {
     id: 2,
@@ -435,17 +441,17 @@ export const webDevelopmentPortfolio = [
   {
     id: 3,
     title: "Bayut",
-    image: require("./assets/images/portfolio/web development/bayut.webp"),
+    image: require("./assets/images/portfolio/web development/bayut.png"),
   },
   {
     id: 4,
     title: "Cold Creekcap",
-    image: require("./assets/images/portfolio/web development/cold creekcap.webp"),
+    image: require("./assets/images/portfolio/web development/cold creekcap.png"),
   },
   {
     id: 5,
     title: "College Nutritionist",
-    image: require("./assets/images/portfolio/web development/collegenutritionist.png"),
+    image: require("./assets/images/portfolio/web development/collegenutritionnist.png"),
   },
   {
     id: 6,
@@ -455,12 +461,12 @@ export const webDevelopmentPortfolio = [
   {
     id: 7,
     title: "Menissa Caterings",
-    image: require("./assets/images/portfolio/web development/menissa caterings.webp"),
+    image: require("./assets/images/portfolio/web development/menissa caterings.png"),
   },
   {
     id: 8,
     title: "Think Reality",
-    image: require("./assets/images/portfolio/web development/think reality.webp"),
+    image: require("./assets/images/portfolio/web development/think reality.png"),
   },
 ];
 
@@ -479,17 +485,17 @@ export const appDevelopmentPortfolio = [
   {
     id: 3,
     title: "Dubai Travel Guide",
-    image: require("./assets/images/portfolio/app development/dubai travel guide.webp"),
+    image: require("./assets/images/portfolio/app development/dubai travel guide.png"),
   },
   {
     id: 4,
     title: "Elora Hair Palour",
-    image: require("./assets/images/portfolio/app development/elora hair palour.webp"),
+    image: require("./assets/images/portfolio/app development/elora hair palour.png"),
   },
   {
     id: 5,
     title: "Evans Francis",
-    image: require("./assets/images/portfolio/app development/evans francis.webp"),
+    image: require("./assets/images/portfolio/app development/evans francis.png"),
   },
   {
     id: 6,
@@ -499,21 +505,67 @@ export const appDevelopmentPortfolio = [
   {
     id: 7,
     title: "MyBitsShop",
-    image: require("./assets/images/portfolio/app development/mybitsshop.webp"),
+    image: require("./assets/images/portfolio/app development/mybitsshop.png"),
   },
   {
     id: 8,
     title: "Namaz",
-    image: require("./assets/images/portfolio/app development/namaz.webp"),
+    image: require("./assets/images/portfolio/app development/namaz.png"),
   },
   {
     id: 9,
     title: "Potea",
-    image: require("./assets/images/portfolio/app development/potea.webp"),
+    image: require("./assets/images/portfolio/app development/potea.png"),
   },
   {
     id: 10,
     title: "Rentop",
     image: require("./assets/images/portfolio/app development/rentop.png"),
+  },
+];
+
+// industries
+export const industriesCompanyServe = [
+  {
+    id: 1,
+    title: "Hitech",
+    img: require("./assets/images/industries/Hitech.webp"),
+    desc: "Drive innovation with AI, IoT, and cloud solutions. We deliver cutting-edge tech for digital transformation and operational excellence.",
+  },
+  {
+    id: 2,
+    title: "Retail",
+    img: require("./assets/images/industries/Retail.webp"),
+    desc: "Boost sales with AI-powered personalization and smart inventory systems. Transform omnichannel experiences and streamline supply chains.",
+  },
+  {
+    id: 3,
+    title: "Education",
+    img: require("./assets/images/industries/Education.webp"),
+    desc: "Enhance learning through adaptive platforms and AI tutors. Automate admin tasks and gain insights to improve student outcomes.",
+  },
+  {
+    id: 4,
+    title: "Healthcare",
+    img: require("./assets/images/industries/Healthcare.webp"),
+    desc: "Improve care with AI diagnostics and telemedicine. Optimize EHR systems and enable data-driven clinical decisions.",
+  },
+  {
+    id: 5,
+    title: "Wealth Management",
+    img: require("./assets/images/industries/Wealth Management.webp"),
+    desc: "Optimize portfolios with AI-driven insights. Streamline financial planning and risk assessment for HNW clients.",
+  },
+  {
+    id: 6,
+    title: "Banking & Payments",
+    img: require("./assets/images/industries/Banking & Payments.webp"),
+    desc: "Secure transactions with blockchain and AI fraud detection. Modernize digital banking and payment ecosystems.",
+  },
+  {
+    id: 7,
+    title: "Telecom",
+    img: require("./assets/images/industries/Telecom.webp"),
+    desc: "Enhance networks with AI-driven optimization and 5G solutions. Improve connectivity and customer experiences through smart tech.",
   },
 ];

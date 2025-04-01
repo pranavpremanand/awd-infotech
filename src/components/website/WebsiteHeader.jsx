@@ -15,7 +15,7 @@ const WebsiteHeader = () => {
   };
 
   return (
-    <div className="py-4 fixed top-0 w-full bg-primary/10 backdrop-blur-md z-50 text-primary_text">
+    <div className="py-3 fixed top-0 w-full bg-secondary backdrop-blur-md z-50 text-primary_text">
       <div className="wrapper flex justify-between items-center gap-10">
         <div className="flex justify-between items-center gap-20 w-full">
           <Helmet>
@@ -47,8 +47,8 @@ const WebsiteHeader = () => {
               .map((option) => (
                 <Link
                   to={`${option.path}`}
-                  className={`link ${
-                    option.path === pathname && "text-secondary font-bold"
+                  className={`${
+                    option.path === pathname && "text-primary font-bold"
                   }`}
                   key={option.path}
                 >
