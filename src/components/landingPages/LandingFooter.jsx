@@ -1,5 +1,5 @@
 import React from "react";
-import { companyDetails, logoImg } from "../../constant";
+import { companyDetails, logoBw } from "../../constant";
 import {
   Facebook,
   Instagram,
@@ -13,22 +13,22 @@ import { Helmet } from "react-helmet";
 
 const LandingFooter = () => {
   return (
-    <div className="py-[3rem] bg-[#7a7a7a] text-white">
+    <div className="py-[3rem] bg-[#5d5d5d] text-white">
       <div className="wrapper flex lg:flex-row flex-col gap-7 justify-between">
         <div className="">
           <Helmet>
             {/* Preload the logo image */}
-            <link rel="preload" href={logoImg} as="image" type="image/png" />
+            <link rel="preload" href={logoBw} as="image" type="image/png" />
           </Helmet>
           <img
             width="200"
             height="50"
-            src={logoImg}
+            src={logoBw}
             className="w-[12rem] scale-110 object-contain"
             alt="logo"
           />
           <div className="flex items-center gap-3 mt-5">
-          <Link
+            <Link
               aria-label="Contact us on Instagram"
               to={companyDetails.instagram}
               className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"

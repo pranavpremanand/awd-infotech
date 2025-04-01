@@ -1,4 +1,5 @@
 import logoImg from "./assets/logo/logo.png";
+import logoBw from "./assets/logo/logo-bw.png";
 import {
   FaCode,
   FaMobileAlt,
@@ -27,7 +28,7 @@ import { ReactComponent as webServiceIcon3 } from "./assets/svgs/services/Web De
 import { ReactComponent as webServiceIcon4 } from "./assets/svgs/services/UIUX Design.svg";
 import { lazy } from "react";
 
-export { logoImg };
+export { logoImg,logoBw };
 
 const Home = lazy(() => import("./pages/Home"));
 const AboutUs = lazy(() => import("./pages/AboutUs"));
