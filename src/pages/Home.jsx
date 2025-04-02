@@ -110,7 +110,7 @@ const Home = () => {
               className="w-[4rem] h-[4rem] fill-secondary"
             />
             <p className="text-lg leading-tight font-medium">
-              AI Chatbot Solutions
+            Agentic AI Solutions
             </p>
           </div>
           <p className="desc">

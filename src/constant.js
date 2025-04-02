@@ -37,10 +37,10 @@ const Services = lazy(() => import("./pages/Services"));
 const Industries = lazy(() => import("./pages/Industries"));
 
 export const companyDetails = {
-  phone: "+0000000000",
+  phone: "919535855717",
   address:
     "CB1604 Salarpuria Greenage Bommanahalli Hosur road Bangalore 560068",
-  email: "arvin3ds@gmail.com",
+  email: "techsolutions@awdinfotech.com",
   linkedin: "",
   instagram: "",
   twitter: "",
