@@ -110,13 +110,13 @@ const Home = () => {
               className="w-[4rem] h-[4rem] fill-secondary"
             />
             <p className="text-lg leading-tight font-medium">
-            Agentic AI Solutions
+              Agentic AI Solutions
             </p>
           </div>
           <p className="desc">
-            Our chatbot technology leverages cutting-edge AI to provide natural,
-            human-like conversations, 24/7 customer support, and intelligent
-            automation for your business needs.
+            Our Agentic AI Solutions empower businesses across B2B, B2C, and
+            enterprise ecosystems by integrating advanced AI models tailored for
+            diverse applications.
           </p>
         </div>
         <div className="bg-primary rounded-lg text-white p-5">

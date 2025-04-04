@@ -28,7 +28,7 @@ import { ReactComponent as webServiceIcon3 } from "./assets/svgs/services/Web De
 import { ReactComponent as webServiceIcon4 } from "./assets/svgs/services/UIUX Design.svg";
 import { lazy } from "react";
 
-export { logoImg,logoBw };
+export { logoImg, logoBw };
 
 const Home = lazy(() => import("./pages/Home"));
 const AboutUs = lazy(() => import("./pages/AboutUs"));
@@ -424,6 +424,30 @@ export const allServices = [
       <br/>
       <br/>
       <p>From websites to mobile apps, we design user experiences that lead to higher engagement, satisfaction, and loyalty.</p>`,
+  },
+  {
+    id: 13,
+    title: "Agentic AI Solutions",
+    description:
+      "We build autonomous, decision-making AI agents that revolutionize how businesses operate.",
+    icon: FaRobot, // You might want to use a different icon if available
+    detailHeading: "Agentic AI Solutions: Redefining Intelligent Automation",
+    detailContent: `<p>AI is no longer just a chatbot—it's evolving into autonomous, decision-making agents that revolutionize how businesses operate. At AWD Infotech, we build Agentic AI Solutions that empower businesses with AI-driven intelligence, automation, and adaptive learning across industries.</p>
+      <br/>
+      <ol>
+        <li><b>Smart Search & Filtering:</b><br/>AI-powered contextual search delivering precise, relevant results.</li>
+        <br/>
+        <li><b>Conversational AI & Chatbots:</b> <br/> Self-learning virtual assistants enhancing customer interactions.</li>
+        <br/>
+        <li><b>Autonomous AI Agents:</b><br/> Decision-making AI optimizing workflows and business operations.</li>
+        <br/>
+        <li><b>AI in Cybersecurity:</b><br/> Intelligent threat detection and proactive security management.</li>
+        <br/>
+        <li><b>Hyper-Personalization:</b><br/> AI-driven recommendations tailored to user behavior and preferences.</li>
+      </ol>
+      <br/>
+      <br/>
+      <p>AI is not just automating tasks—it's reshaping the future of business. Are you ready to integrate the next generation of AI?</p>`,
   },
 ];
 
