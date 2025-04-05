@@ -26,6 +26,7 @@ AOS.init({
 });
 
 function App() {
+  
   return (
     <Suspense fallback={<LoadingSpinner />}>
       <SpinnerContextProvider>
