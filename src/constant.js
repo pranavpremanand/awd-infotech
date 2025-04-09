@@ -13,6 +13,33 @@ import {
   FaLanguage,
   FaCloudUploadAlt,
   FaPalette,
+  FaLink,
+  FaShieldAlt,
+  FaCoins,
+  FaExchangeAlt,
+  FaUnity,
+  FaMobile,
+  FaVrCardboard,
+  FaUsers,
+  FaServer,
+  FaCogs,
+  FaFileExcel,
+  FaChartBar,
+  FaEye,
+  FaSearch,
+  FaShoppingCart,
+  FaMedal,
+  FaSync,
+  FaNetworkWired,
+  FaComments,
+  FaBook,
+  FaHeadset,
+  FaTools,
+  FaTachometerAlt,
+  FaLayerGroup,
+  FaDesktop,
+  FaUserCheck,
+  FaProjectDiagram,
 } from "react-icons/fa";
 
 // app development services
@@ -27,6 +54,7 @@ import { ReactComponent as webServiceIcon2 } from "./assets/svgs/services/Social
 import { ReactComponent as webServiceIcon3 } from "./assets/svgs/services/Web Development.svg";
 import { ReactComponent as webServiceIcon4 } from "./assets/svgs/services/UIUX Design.svg";
 import { lazy } from "react";
+import { LuChartNetwork } from "react-icons/lu";
 
 export { logoImg, logoBw };
 
@@ -136,6 +164,460 @@ export const appDevelopmentServices = [
     icon: appServiceIcon4,
     description:
       "Creating adaptive mobile applications that function flawlessly on both iOS and Android, ensuring consistent user experiences.",
+  },
+];
+
+// Blockchain Development Services
+export const blockchainDevelopmentServices = [
+  {
+    id: 1,
+    title: "Smart Contract Development",
+    icon: FaEthereum,
+    description:
+      "Secure, audited smart contracts for decentralized applications, tokens, and blockchain protocols.",
+  },
+  {
+    id: 2,
+    title: "DApp Development",
+    icon: FaLink,
+    description:
+      "Decentralized applications built on Ethereum, Polygon, Solana, and other leading blockchains.",
+  },
+  {
+    id: 3,
+    title: "Blockchain Security",
+    icon: FaShieldAlt,
+    description:
+      "Comprehensive security audits and penetration testing for your blockchain solutions.",
+  },
+  {
+    id: 4,
+    title: "Token Development",
+    icon: FaCoins,
+    description:
+      "Custom token creation including ERC-20, ERC-721, and other token standards.",
+  },
+  {
+    id: 5,
+    title: "DeFi Solutions",
+    icon: FaExchangeAlt,
+    description:
+      "Decentralized finance platforms including lending protocols, DEXs, and yield farming.",
+  },
+  {
+    id: 6,
+    title: "NFT Marketplaces",
+    icon: FaChartLine,
+    description:
+      "Custom NFT platforms with minting, trading, and auction capabilities.",
+  },
+];
+
+// game development services
+export const gameDevelopmentServices = [
+  {
+    id: 1,
+    title: "Mobile Game Development",
+    icon: FaMobile,
+    description:
+      "Engaging 2D and 3D mobile games for iOS and Android platforms.",
+  },
+  {
+    id: 2,
+    title: "PC/Console Games",
+    icon: FaGamepad,
+    description:
+      "High-performance games for Windows, Mac, PlayStation, and Xbox.",
+  },
+  {
+    id: 3,
+    title: "Unity Game Development",
+    icon: FaUnity,
+    description: "Cross-platform games developed with Unity engine.",
+  },
+  {
+    id: 4,
+    title: "VR/AR Games",
+    icon: FaVrCardboard,
+    description: "Immersive virtual and augmented reality gaming experiences.",
+  },
+  {
+    id: 5,
+    title: "Multiplayer Games",
+    icon: FaUsers,
+    description:
+      "Online multiplayer games with matchmaking and social features.",
+  },
+  {
+    id: 6,
+    title: "Game Backend Services",
+    icon: FaServer,
+    description:
+      "Scalable backend infrastructure for game analytics, leaderboards, and more.",
+  },
+];
+
+// rpa development services
+export const rpaServices = [
+  {
+    id: 1,
+    title: "Process Automation",
+    icon: FaRobot,
+    description:
+      "Automate repetitive tasks across applications to improve efficiency.",
+  },
+  {
+    id: 2,
+    title: "Workflow Automation",
+    icon: FaCogs,
+    description:
+      "Streamline complex business processes with intelligent automation.",
+  },
+  {
+    id: 3,
+    title: "Data Migration",
+    icon: FaDatabase,
+    description: "Automated data transfer between systems with zero errors.",
+  },
+  {
+    id: 4,
+    title: "Excel Automation",
+    icon: FaFileExcel,
+    description: "Automate spreadsheet tasks and complex data manipulations.",
+  },
+  {
+    id: 5,
+    title: "ERP Integration",
+    icon: FaExchangeAlt,
+    description: "Connect disparate systems and automate data flows.",
+  },
+  {
+    id: 6,
+    title: "Analytics Automation",
+    icon: FaChartBar,
+    description: "Automated report generation and data visualization.",
+  },
+];
+
+// ai development services
+export const aiServices = [
+  {
+    id: 1,
+    title: "AI Strategy Consulting",
+    icon: FaBrain,
+    description: "Roadmap for AI implementation aligned with business goals.",
+  },
+  {
+    id: 2,
+    title: "Computer Vision",
+    icon: FaEye,
+    description:
+      "Image and video recognition systems for various applications.",
+  },
+  {
+    id: 3,
+    title: "Predictive Analytics",
+    icon: FaChartLine,
+    description: "AI models that forecast trends and behaviors.",
+  },
+  {
+    id: 4,
+    title: "Chatbots & Virtual Assistants",
+    icon: FaRobot,
+    description: "Intelligent conversational agents for customer support.",
+  },
+  {
+    id: 5,
+    title: "Natural Language Processing",
+    icon: FaLanguage,
+    description: "Text analysis and generation capabilities.",
+  },
+  {
+    id: 6,
+    title: "AI Process Automation",
+    icon: FaCogs,
+    description: "Combine AI with RPA for cognitive automation.",
+  },
+];
+
+// ml development services
+export const mlServices = [
+  {
+    id: 1,
+    title: "Predictive Modeling",
+    icon: FaChartBar,
+    description:
+      "Build models that forecast future outcomes based on historical data.",
+  },
+  {
+    id: 2,
+    title: "Recommendation Systems",
+    icon: FaShoppingCart,
+    description: "Personalized product/content recommendations for users.",
+  },
+  {
+    id: 3,
+    title: "Anomaly Detection",
+    icon: FaSearch,
+    description: "Identify unusual patterns in data for fraud prevention.",
+  },
+  {
+    id: 4,
+    title: "Computer Vision ML",
+    icon: FaEye,
+    description: "Image classification and object recognition models.",
+  },
+  {
+    id: 5,
+    title: "Natural Language ML",
+    icon: FaLanguage,
+    description: "Text classification, sentiment analysis, and more.",
+  },
+  {
+    id: 6,
+    title: "ML Model Optimization",
+    icon: FaMedal,
+    description: "Improve accuracy and performance of existing models.",
+  },
+];
+
+// cloud computing services
+export const cloudServices = [
+  {
+    id: 1,
+    title: "Cloud Infrastructure",
+    icon: FaServer,
+    description: "Design and deploy scalable cloud architecture.",
+  },
+  {
+    id: 2,
+    title: "Cloud Migration",
+    icon: FaSync,
+    description: "Seamless transition of applications and data to the cloud.",
+  },
+  {
+    id: 3,
+    title: "Database Solutions",
+    icon: FaDatabase,
+    description: "Managed database services in the cloud.",
+  },
+  {
+    id: 4,
+    title: "Cloud Security",
+    icon: FaShieldAlt,
+    description: "Comprehensive security for cloud environments.",
+  },
+  {
+    id: 5,
+    title: "Hybrid Cloud",
+    icon: FaNetworkWired,
+    description: "Integration of on-premise and cloud infrastructure.",
+  },
+  {
+    id: 6,
+    title: "Serverless Computing",
+    icon: FaCloud,
+    description: "Build and run applications without managing servers.",
+  },
+];
+
+// data science services
+export const dataScienceServices = [
+  {
+    id: 1,
+    title: "Data Analytics",
+    icon: FaChartLine,
+    description: "Turn raw data into actionable business insights.",
+  },
+  {
+    id: 2,
+    title: "Big Data Solutions",
+    icon: FaDatabase,
+    description: "Process and analyze large, complex datasets.",
+  },
+  {
+    id: 3,
+    title: "Data Visualization",
+    icon: FaSearch,
+    description: "Interactive dashboards and reports for data storytelling.",
+  },
+  {
+    id: 4,
+    title: "Predictive Modeling",
+    icon: FaBrain,
+    description: "Statistical models to forecast future trends.",
+  },
+  {
+    id: 5,
+    title: "Data Engineering",
+    icon: FaCode,
+    description: "Build robust data pipelines and infrastructure.",
+  },
+  {
+    id: 6,
+    title: "Data Governance",
+    icon: FaShieldAlt,
+    description: "Ensure data quality, security, and compliance.",
+  },
+];
+
+// nlp development services
+export const nlpServices = [
+  {
+    id: 1,
+    title: "Text Classification",
+    icon: FaBook,
+    description: "Categorize and organize text data automatically.",
+  },
+  {
+    id: 2,
+    title: "Sentiment Analysis",
+    icon: FaComments,
+    description: "Determine emotional tone in customer feedback.",
+  },
+  {
+    id: 3,
+    title: "Chatbots & Virtual Agents",
+    icon: FaRobot,
+    description: "AI-powered conversational interfaces.",
+  },
+  {
+    id: 4,
+    title: "Machine Translation",
+    icon: FaLanguage,
+    description: "Automated translation between languages.",
+  },
+  {
+    id: 5,
+    title: "Text Summarization",
+    icon: FaSearch,
+    description: "Condense long documents into key points.",
+  },
+  {
+    id: 6,
+    title: "Voice Assistants",
+    icon: FaHeadset,
+    description: "Speech recognition and voice response systems.",
+  },
+];
+
+// cloud migration services
+export const cloudMigrationServices = [
+  {
+    id: 1,
+    title: "Assessment & Planning",
+    icon: FaSearch,
+    description: "Comprehensive analysis of current infrastructure.",
+  },
+  {
+    id: 2,
+    title: "Lift & Shift Migration",
+    icon: FaCloudUploadAlt,
+    description: "Move applications with minimal changes.",
+  },
+  {
+    id: 3,
+    title: "Refactoring Services",
+    icon: FaTools,
+    description: "Optimize applications for cloud-native architecture.",
+  },
+  {
+    id: 4,
+    title: "Data Migration",
+    icon: FaDatabase,
+    description: "Secure transfer of databases to the cloud.",
+  },
+  {
+    id: 5,
+    title: "Performance Optimization",
+    icon: FaTachometerAlt,
+    description: "Tune applications for cloud performance.",
+  },
+  {
+    id: 6,
+    title: "Security & Compliance",
+    icon: FaShieldAlt,
+    description: "Ensure secure transition meeting all regulations.",
+  },
+];
+
+// ui ux design services
+export const uiuxServices = [
+  {
+    id: 1,
+    title: "User Research",
+    icon: FaUserCheck,
+    description: "Understand user needs through comprehensive research.",
+  },
+  {
+    id: 2,
+    title: "UI Design",
+    icon: FaPalette,
+    description: "Beautiful, intuitive interfaces for all devices.",
+  },
+  {
+    id: 3,
+    title: "UX Strategy",
+    icon: FaBrain,
+    description: "Holistic approach to user experience design.",
+  },
+  {
+    id: 4,
+    title: "Mobile App Design",
+    icon: FaMobile,
+    description: "iOS and Android interfaces with platform conventions.",
+  },
+  {
+    id: 5,
+    title: "Web Design",
+    icon: FaDesktop,
+    description: "Responsive designs that work across all browsers.",
+  },
+  {
+    id: 6,
+    title: "Design Systems",
+    icon: FaLayerGroup,
+    description: "Scalable component libraries for consistent UI.",
+  },
+];
+
+// agentic ai services
+export const agenticAIServices = [
+  {
+    id: 1,
+    title: "Autonomous Agents",
+    icon: FaRobot,
+    description: "AI systems that can act independently to achieve goals.",
+  },
+  {
+    id: 2,
+    title: "Multi-Agent Systems",
+    icon: FaProjectDiagram,
+    description: "Coordinated AI agents working together on complex tasks.",
+  },
+  {
+    id: 3,
+    title: "Cognitive Architectures",
+    icon: FaBrain,
+    description: "AI systems with human-like reasoning capabilities.",
+  },
+  {
+    id: 4,
+    title: "Agent Learning Systems",
+    icon: FaCogs,
+    description: "AI agents that improve through experience.",
+  },
+  {
+    id: 5,
+    title: "Agent Security",
+    icon: FaShieldAlt,
+    description: "Ensure safe operation of autonomous AI systems.",
+  },
+  {
+    id: 6,
+    title: "Agent Monitoring",
+    icon: LuChartNetwork,
+    description: "Track and analyze agent behavior and performance.",
   },
 ];
 
@@ -494,6 +976,20 @@ export const webDevelopmentPortfolio = [
     image: require("./assets/images/portfolio/web development/think reality.png"),
   },
 ];
+
+// game development portfolio
+export const gameDevelopmentPortfolio = [
+  {
+    id: 1,
+    title: "3D Bowling Game",
+    image: require("./assets/images/portfolio/game development/3d bowling game.png"),
+  },
+  {
+    id: 2,
+    title: "Car Stunt Extreme Racing",
+    image: require("./assets/images/portfolio/game development/car stunt extreme racing.png"),
+  },
+]
 
 // app development portfolio
 export const appDevelopmentPortfolio = [

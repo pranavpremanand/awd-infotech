@@ -1,6 +1,10 @@
 import React from "react";
 import SubHeading from "./SubHeading";
-import { appDevelopmentPortfolio, webDevelopmentPortfolio } from "../constant";
+import {
+  appDevelopmentPortfolio,
+  gameDevelopmentPortfolio,
+  webDevelopmentPortfolio,
+} from "../constant";
 
 const Portfolio = ({ page }) => {
   let portfolioList;
@@ -9,10 +13,12 @@ const Portfolio = ({ page }) => {
     portfolioList = webDevelopmentPortfolio;
   } else if (page === "app-development") {
     portfolioList = appDevelopmentPortfolio;
+  } else if (page === "game-development") {
+    portfolioList = gameDevelopmentPortfolio;
   } else {
     portfolioList = webDevelopmentPortfolio
       .slice(0, 3)
-      .concat(appDevelopmentPortfolio.slice(0, 3));
+      .concat(appDevelopmentPortfolio.slice(0, 3), gameDevelopmentPortfolio);
   }
   return (
     <div className="py-[5rem] wrapper flex flex-col items-center gap-5">
@@ -23,12 +29,12 @@ const Portfolio = ({ page }) => {
       >
         Few of Our Projects
       </h2>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 max-w-6xl mx-auto mt-5">
+      <div className="flex flex-wrap justify-center gap-7 max-w-6xl mx-auto mt-5">
         {portfolioList.map(({ image, id, title }) => (
           <div
             data-aos="fade-up"
             key={id}
-            className="p-3 border-2 border-secondary group rounded-xl aspect-square shadow-inner_shadow shadow-secondary/20"
+            className="p-3 border-2 sm:w-[calc(50%-1.5rem)] lg:w-[calc(33%-1.5rem)] border-secondary group rounded-xl aspect-square shadow-inner_shadow shadow-secondary/20"
           >
             <div className="overflow-hidden relative h-full rounded-xl">
               <div className="absolute z-[5] top-0 w-full h-full bg-gradient-to-b from-transparent to-primary/30"></div>

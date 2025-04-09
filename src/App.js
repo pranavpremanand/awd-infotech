@@ -15,7 +15,32 @@ import { LoadingSpinner } from "./components/LoadingSpinner";
 import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppIcon from "./components/WhatsAppIcon";
 import { Toaster } from "react-hot-toast";
-const LandingPage = lazy(() => import("./pages/LandingPage"));
+const LandingPage = lazy(() => import("./pages/landingpages/LandingPage"));
+const BlockchainLanding = lazy(() =>
+  import("./pages/landingpages/BlockchainLanding")
+);
+const GameDevelopmentLanding = lazy(() =>
+  import("./pages/landingpages/GameDevelopmentLanding")
+);
+const RPALanding = lazy(() => import("./pages/landingpages/RPALanding"));
+const AILanding = lazy(() => import("./pages/landingpages/AILanding"));
+const MLLanding = lazy(() => import("./pages/landingpages/MLLanding"));
+const CloudComputingLanding = lazy(() =>
+  import("./pages/landingpages/CloudComputingLanding")
+);
+const DataScienceLanding = lazy(() =>
+  import("./pages/landingpages/DataScienceLanding")
+);
+const NLPLanding = lazy(() => import("./pages/landingpages/NLPLanding"));
+const CloudMigrationLanding = lazy(() =>
+  import("./pages/landingpages/CloudMigrationLanding")
+);
+const UIUXLanding = lazy(() =>
+  import("./pages/landingpages/UIUXLanding")
+);
+const AgenticAILanding = lazy(() =>
+  import("./pages/landingpages/AgenticAILanding")
+);
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 const BlogDetails = lazy(() => import("./pages/BlogDetails"));
 
@@ -60,6 +85,35 @@ function App() {
             <Route
               path="/app-development"
               element={<LandingPage page={"app-development"} />}
+            />
+            <Route
+              path="/blockchain-development"
+              element={<BlockchainLanding />}
+            />
+            <Route
+              path="/game-development"
+              element={<GameDevelopmentLanding />}
+            />
+            <Route path="/rpa-development" element={<RPALanding />} />
+            <Route path="/ai-development" element={<AILanding />} />
+            <Route path="/ml-development" element={<MLLanding />} />
+            <Route
+              path="/cloud-computing"
+              element={<CloudComputingLanding />}
+            />
+            <Route path="/data-science" element={<DataScienceLanding />} />
+            <Route path="/nlp-development" element={<NLPLanding />} />
+            <Route
+              path="/cloud-migration"
+              element={<CloudMigrationLanding />}
+            />
+            <Route
+              path="/ui-ux-design"
+              element={<UIUXLanding />}
+            />
+            <Route
+              path="/agentic-ai"
+              element={<AgenticAILanding />}
             />
           </Routes>
         </Router>

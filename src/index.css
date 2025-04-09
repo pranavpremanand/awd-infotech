@@ -51,19 +51,19 @@ html {
     @apply max-w-[85rem] mx-auto px-4;
   }
   .heading {
-    @apply text-[2.75rem] md:text-[5.5rem] font-bold leading-[1];
+    @apply text-[2.60rem] md:text-[5rem] lg:text-[5.5rem] font-bold leading-[1];
   }
   .heading-1 {
-    @apply text-[2.75rem] md:text-[3.75rem] font-semibold leading-tight;
+    @apply text-[2.60rem] md:text-[3.75rem] font-semibold leading-tight;
   }
   .heading-2 {
-    @apply text-[2.25rem] md:text-[2.5rem] font-semibold leading-tight text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text;
+    @apply text-[2.20rem] md:text-[2.5rem] font-semibold leading-tight text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text;
   }
   .heading-2_1 {
-    @apply text-[2.25rem] md:text-[2.5rem] font-semibold leading-tight;
+    @apply text-[2.20rem] md:text-[2.5rem] font-semibold leading-tight;
   }
   .sub-heading {
-    @apply text-[1.15rem] sm:text-[1.25rem] font-light leading-tight text-primary_text tracking-widest;
+    @apply text-[1.10rem] sm:text-[1.25rem] font-light leading-tight text-primary_text tracking-widest;
   }
   .desc {
     @apply text-base font-light;
@@ -75,7 +75,7 @@ html {
     @apply text-white font-medium cursor-pointer tracking-wide bg-gradient-to-b from-primary to-primary text-sm hover:shadow-primary/10 hover:-translate-y-1 shadow-large shadow-transparent rounded-full px-4 py-3 min-w-[8rem] flex justify-center text-center transition-all duration-300;
   }
   .secondary-btn {
-    @apply text-white font-medium cursor-pointer tracking-wide bg-gradient-to-b from-secondary to-secondary text-sm hover:shadow-secondary/10 hover:-translate-y-1 shadow-large shadow-transparent rounded-full px-4 py-3 min-w-[8rem] flex justify-center text-center transition-all duration-300;
+    @apply text-primary font-medium cursor-pointer tracking-wide bg-gradient-to-b from-secondary to-secondary text-sm hover:shadow-secondary/10 hover:-translate-y-1 shadow-large shadow-transparent rounded-full px-4 py-3 min-w-[8rem] flex justify-center text-center transition-all duration-300;
   }
   .link {
     @apply cursor-pointer hover:text-primary transition-colors duration-200;
