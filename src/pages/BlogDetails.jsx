@@ -7,7 +7,7 @@ import {
   FaLinkedin,
   FaFacebook,
 } from "react-icons/fa";
-import { industriesBlogs, servicesBlogs } from "../blogs";
+import { industryBlogs, serviceBlogs } from "../blogs";
 import { createUrlParam } from "../utils/helper";
 
 const WebsiteHeader = React.lazy(() =>
@@ -19,12 +19,12 @@ const WebsiteFooter = React.lazy(() =>
 
 const BlogDetails = () => {
   const { title } = useParams();
-  let blog = industriesBlogs.find(
+  let blog = industryBlogs.find(
     (item) => createUrlParam(item.title) === title
   );
 
   if (blog === undefined) {
-    blog = servicesBlogs.find((item) => createUrlParam(item.title) === title);
+    blog = serviceBlogs.find((item) => createUrlParam(item.title) === title);
   }
 
   if (!blog) {

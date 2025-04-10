@@ -1,6 +1,6 @@
 import React from "react";
 import { industriesCompanyServe } from "../constant";
-import { industriesBlogs } from "../blogs";
+import { industryBlogs } from "../blogs";
 import { Link } from "react-router-dom";
 import { createUrlParam } from "../utils/helper";
 
@@ -71,7 +71,7 @@ const Industries = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {industriesBlogs.map((blog) => (
+            {industryBlogs.map((blog) => (
               <div
                 key={blog.id}
                 className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"

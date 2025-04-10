@@ -5,24 +5,24 @@ import Drawer from "react-modern-drawer";
 import { X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { createUrlParam } from "../../utils/helper";
-import { servicesBlogs } from "../../blogs";
+import { serviceBlogs } from "../../blogs";
 
 const AllServices = ({ length }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(allServices[0]);
   const [blogs, setBlogs] = useState(
-    servicesBlogs.filter((item) => item.serviceId === 1)
+    serviceBlogs.filter((item) => item.service === "Web Development")
   );
 
   const services = length ? allServices.slice(0, length) : allServices;
 
-  const handleSelectServiceToShowDetail = (service) => {
-    setSelectedService(service);
-    setIsOpen(true);
-    const blogsList =
-      servicesBlogs.filter((item) => item.serviceId === service.id) || [];
-    setBlogs(blogsList);
-  };
+  // const handleSelectServiceToShowDetail = (service) => {
+  //   setSelectedService(service);
+  //   setIsOpen(true);
+  //   const blogsList =
+  //     serviceBlogs.filter((item) => item.service === service.service) || [];
+  //   setBlogs(blogsList);
+  // };
 
   return (
     <section className="bg-secondary/5 ">
@@ -46,12 +46,14 @@ const AllServices = ({ length }) => {
                 <h6 className="text-xl font-medium mt-2">{service.title}</h6>
                 <p className="desc mt-2">{service.description}</p>
               </div>
-              <button
-                onClick={() => handleSelectServiceToShowDetail(service)}
+              <Link
+                to={service.landingPageUrl}
+                target="_blank"
+                // onClick={() => handleSelectServiceToShowDetail(service)}
                 className="secondary-btn mt-5 w-fit mx-auto"
               >
                 Learn More
-              </button>
+              </Link>
             </div>
           ))}
         </div>

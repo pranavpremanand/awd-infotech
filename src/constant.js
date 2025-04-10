@@ -62,6 +62,7 @@ const Home = lazy(() => import("./pages/Home"));
 const AboutUs = lazy(() => import("./pages/AboutUs"));
 const ContactUs = lazy(() => import("./pages/ContactUs"));
 const Services = lazy(() => import("./pages/Services"));
+const Blogs = lazy(() => import("./pages/Blogs"));
 const Industries = lazy(() => import("./pages/Industries"));
 
 export const companyDetails = {
@@ -90,6 +91,11 @@ export const routes = [
     path: "/services",
     name: "Services",
     element: <Services />,
+  },
+  {
+    path: "/blogs",
+    name: "Blogs",
+    element: <Blogs />,
   },
   {
     path: "/industries",
@@ -665,6 +671,7 @@ export const allServices = [
   {
     id: 1,
     title: "Web Development",
+    landingPageUrl: "/web-development",
     description:
       "We build more than just websites—we create digital experiences that are crafted to perform.",
     icon: FaCode,
@@ -685,6 +692,7 @@ export const allServices = [
   {
     id: 2,
     title: "App Development",
+    landingPageUrl: "/app-development",
     description:
       "We specialize in creating custom mobile applications that are user-friendly, feature-rich, and tailored to your specific goals.",
     icon: FaMobileAlt,
@@ -706,6 +714,7 @@ export const allServices = [
   {
     id: 3,
     title: "Blockchain Development",
+    landingPageUrl: "/blockchain-development",
     description:
       "We build secure, decentralized applications and smart contracts to power the next generation of digital solutions.",
     icon: FaEthereum,
@@ -727,6 +736,7 @@ export const allServices = [
   {
     id: 4,
     title: "Game Development",
+    landingPageUrl: "/game-development",
     description:
       "We specialize in creating immersive, engaging games for mobile, console, and PC platforms.",
     icon: FaGamepad,
@@ -748,6 +758,7 @@ export const allServices = [
   {
     id: 5,
     title: "Robotic Process Automation (RPA)",
+    landingPageUrl: "/rpa-development",
     description:
       "We automate repetitive tasks and business processes to increase efficiency and reduce operational costs.",
     icon: FaRobot,
@@ -768,6 +779,7 @@ export const allServices = [
   {
     id: 6,
     title: "Artificial Intelligence",
+    landingPageUrl: "/ai-development",
     description:
       "We develop AI solutions that transform business operations and create intelligent, adaptive systems.",
     icon: FaBrain,
@@ -789,6 +801,7 @@ export const allServices = [
   {
     id: 7,
     title: "Machine Learning",
+    landingPageUrl: "/ml-development",
     description:
       "We develop machine learning solutions that help businesses automate processes, make smarter decisions, and uncover new insights.",
     icon: FaChartLine,
@@ -810,6 +823,7 @@ export const allServices = [
   {
     id: 8,
     title: "Cloud Computing",
+    landingPageUrl: "/cloud-computing",
     description:
       "We provide scalable, secure cloud solutions to help businesses optimize their IT infrastructure and operations.",
     icon: FaCloud,
@@ -830,6 +844,7 @@ export const allServices = [
   {
     id: 9,
     title: "Data Science",
+    landingPageUrl: "/data-science",
     description:
       "We turn your data into actionable insights that drive business growth and innovation.",
     icon: FaDatabase,
@@ -850,6 +865,7 @@ export const allServices = [
   {
     id: 10,
     title: "Natural Language Processing (NLP)",
+    landingPageUrl: "/nlp-development",
     description:
       "We develop NLP solutions that enable machines to understand, interpret, and generate human language.",
     icon: FaLanguage,
@@ -870,6 +886,7 @@ export const allServices = [
   {
     id: 11,
     title: "Cloud Migration",
+    landingPageUrl: "/cloud-migration",
     description:
       "We help businesses seamlessly transition their applications and data to the cloud with minimal disruption.",
     icon: FaCloudUploadAlt,
@@ -890,6 +907,7 @@ export const allServices = [
   {
     id: 12,
     title: "UI/UX Design",
+    landingPageUrl: "/ui-ux-design",
     description:
       "Our UI/UX design services focus on creating intuitive, user-centered designs that make it easy for your customers to engage with your business.",
     icon: FaPalette,
@@ -910,9 +928,10 @@ export const allServices = [
   {
     id: 13,
     title: "Agentic AI Solutions",
+    landingPageUrl: "/agentic-ai",
     description:
       "We build autonomous, decision-making AI agents that revolutionize how businesses operate.",
-    icon: FaRobot, // You might want to use a different icon if available
+    icon: FaRobot,
     detailHeading: "Agentic AI Solutions: Redefining Intelligent Automation",
     detailContent: `<p>AI is no longer just a chatbot—it's evolving into autonomous, decision-making agents that revolutionize how businesses operate. At AWD Infotech, we build Agentic AI Solutions that empower businesses with AI-driven intelligence, automation, and adaptive learning across industries.</p>
       <br/>
@@ -989,7 +1008,7 @@ export const gameDevelopmentPortfolio = [
     title: "Car Stunt Extreme Racing",
     image: require("./assets/images/portfolio/game development/car stunt extreme racing.png"),
   },
-]
+];
 
 // app development portfolio
 export const appDevelopmentPortfolio = [

@@ -36,18 +36,6 @@ const Home = () => {
       <WebsiteHeader />
       <section className="h-screen banner-video relative text-primary_text">
         <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background/60 to-background/60"></div>
-        {/* <img
-          loading="lazy"
-          src={bannerImg}
-          srcset={`${bannerImg} 400w, 
-          ${bannerImg} 800w, 
-          ${bannerImg} 1200w`}
-          sizes="(max-width: 600px) 200px, 
-         (max-width: 1200px) 800px, 
-         1200px"
-          class="w-full h-full absolute -z-10 object-cover object-top"
-          alt=""
-        /> */}
         <ReactPlayer
           url={banner}
           playing
@@ -66,22 +54,24 @@ const Home = () => {
             },
           }}
         />
-        <div
-          data-aos="fade-up"
-          className="wrapper text-center flex flex-col gap-4 justify-center items-center absolute inset-0 h-full w-full z-10"
-        >
-          <p className="sub-heading !font-normal">
+        <div className="wrapper translate-y-[2rem] text-center flex flex-col gap-4 justify-center items-center absolute inset-0 h-full w-full z-10">
+          <p data-aos="fade-up" className="sub-heading !font-normal">
             Welcome to{" "}
             <span className="text-primary font-bold block sm:inline">
               AWD Infotech
             </span>
           </p>
-          <h1 className="heading capitalize">
+          <h1 data-aos="fade-up" className="heading capitalize">
             Transforming Ideas into <br /> Impactful Digital Solutions
           </h1>
-          <p className="sub-heading !font-normal">
+          <p data-aos="fade-up" className="sub-heading !font-normal">
             Your Digital Journey Starts Here
           </p>
+          <div data-aos="fade-up">
+            <Link to="/contact-us" className="secondary-btn !mt-4">
+              Get Started
+            </Link>
+          </div>
         </div>
       </section>
       <div

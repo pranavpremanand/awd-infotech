@@ -1,4 +1,4 @@
-export const industriesBlogs = [
+export const industryBlogs = [
   {
     id: 1,
     title: "Banking Evolution: Empowering Financial Services with AI",
@@ -218,15 +218,15 @@ export const industriesBlogs = [
 ];
 
 // blogs related to services
-export const servicesBlogs = [
+export const serviceBlogs = [
   {
     id: 1,
-    title: "Web Development: Building the Digital Future",
-    serviceId: 1,
+    title: "Building the Digital Future",
+    service: "Web Development",
     image: require("./assets/images/blogs/WD1.webp"),
     html: `
               <div class="p-6 bg-white rounded-lg shadow-md">
-                <h1 class="text-2xl font-bold text-gray-800 mb-4">Web Development: Building the Digital Future</h1>
+                <h1 class="text-2xl font-bold text-gray-800 mb-4">Building the Digital Future</h1>
                 <p class="text-gray-600 mb-6">The digital landscape is evolving rapidly, and businesses must keep up with cutting-edge web solutions to stay competitive. At AWD Infotech, we're redefining web development with AI-driven innovation, responsive designs, and high-performance architectures to create seamless digital experiences.</p>
                 
                 <div class="mb-8">
@@ -262,12 +262,12 @@ export const servicesBlogs = [
   },
   {
     id: 2,
-    title: "App Development: Smart, Scalable, and Seamless",
-    serviceId: 2,
+    title: "Smart, Scalable, and Seamless",
+    service: "App Development",
     image: require("./assets/images/blogs/AD 1.webp"),
     html: `
               <div class="p-6 bg-white rounded-lg shadow-md">
-                <h1 class="text-2xl font-bold text-gray-800 mb-4">App Development: Smart, Scalable, and Seamless</h1>
+                <h1 class="text-2xl font-bold text-gray-800 mb-4">Smart, Scalable, and Seamless</h1>
                 <p class="text-gray-600 mb-6">In a mobile-first world, businesses need intelligent, high-performing applications to stay ahead. At AWD Infotech, we build AI-driven, user-centric apps that enhance engagement, security, and efficiency across industries.</p>
                 
                 <div class="mb-8">
@@ -303,12 +303,12 @@ export const servicesBlogs = [
   },
   {
     id: 3,
-    title: "Blockchain Development: Secure, Transparent, Decentralized",
-    serviceId: 3,
+    title: "Secure, Transparent, Decentralized",
+    service: "Blockchain Development",
     image: require("./assets/images/blogs/BC 1.webp"),
     html: `
               <div class="p-6 bg-white rounded-lg shadow-md">
-                <h1 class="text-2xl font-bold text-gray-800 mb-4">Blockchain Development: Secure, Transparent, Decentralized</h1>
+                <h1 class="text-2xl font-bold text-gray-800 mb-4">Secure, Transparent, Decentralized</h1>
                 <p class="text-gray-600 mb-6">Blockchain is redefining security, transparency, and trust in digital transactions. At AWD Infotech, we help businesses integrate blockchain solutions for enhanced security, efficiency, and innovation.</p>
                 
                 <div class="mb-8">
@@ -344,12 +344,12 @@ export const servicesBlogs = [
   },
   {
     id: 4,
-    title: "Game Development: The Future of Interactive Entertainment",
-    serviceId: 4,
+    title: "The Future of Interactive Entertainment",
+    service: "Game Development",
     image: require("./assets/images/blogs/GD 1.webp"),
     html: `
               <div class="p-6 bg-white rounded-lg shadow-md">
-                <h1 class="text-2xl font-bold text-gray-800 mb-4">Game Development: The Future of Interactive Entertainment</h1>
+                <h1 class="text-2xl font-bold text-gray-800 mb-4">The Future of Interactive Entertainment</h1>
                 <p class="text-gray-600 mb-6">Gaming is more than entertainment—it's an evolving digital universe. At AWD Infotech, we create immersive, AI-powered gaming experiences that push the boundaries of creativity and technology.</p>
                 
                 <div class="mb-8">
@@ -385,12 +385,12 @@ export const servicesBlogs = [
   },
   {
     id: 5,
-    title: "Robotic Process Automation (RPA): Automate, Optimize, Accelerate",
-    serviceId: 5,
+    title: "Automate, Optimize, Accelerate",
+    service: "Robotic Process Automation (RPA)",
     image: require("./assets/images/blogs/RPA 1.webp"),
     html: `
               <div class="p-6 bg-white rounded-lg shadow-md">
-                <h1 class="text-2xl font-bold text-gray-800 mb-4">Robotic Process Automation (RPA): Automate, Optimize, Accelerate</h1>
+                <h1 class="text-2xl font-bold text-gray-800 mb-4">Automate, Optimize, Accelerate</h1>
                 <p class="text-gray-600 mb-6">Repetitive tasks slow businesses down. At AWD Infotech, we harness RPA to streamline workflows, reduce errors, and boost efficiency.</p>
                 
                 <div class="mb-8">
@@ -426,12 +426,12 @@ export const servicesBlogs = [
   },
   {
     id: 6,
-    title: "AI: The Future is Now",
-    serviceId: 6,
+    title: "The Future is Now",
+    service: "Artificial Intelligence",
     image: require("./assets/images/blogs/AI 1.webp"),
     html: `
               <div class="p-6 bg-white rounded-lg shadow-md">
-                <h1 class="text-2xl font-bold text-gray-800 mb-4">AI: The Future is Now</h1>
+                <h1 class="text-2xl font-bold text-gray-800 mb-4">The Future is Now</h1>
                 <p class="text-gray-600 mb-6">Artificial Intelligence is no longer a concept of the future—it's transforming industries today. At AWD Infotech, we harness AI to drive business intelligence, automation, and smarter decision-making across multiple sectors.</p>
                 
                 <div class="mb-8">
@@ -467,12 +467,12 @@ export const servicesBlogs = [
   },
   {
     id: 7,
-    title: "Machine Learning: Turning Data into Intelligence",
-    serviceId: 7,
+    title: "Turning Data into Intelligence",
+    service: "Machine Learning",
     image: require("./assets/images/blogs/ML 1.jpg"),
     html: `
               <div class="p-6 bg-white rounded-lg shadow-md">
-                <h1 class="text-2xl font-bold text-gray-800 mb-4">Machine Learning: Turning Data into Intelligence</h1>
+                <h1 class="text-2xl font-bold text-gray-800 mb-4">Turning Data into Intelligence</h1>
                 <p class="text-gray-600 mb-6">Machine learning is driving smarter business decisions and personalized user experiences. At AWD Infotech, we build ML solutions that help businesses leverage data for real-world impact.</p>
                 
                 <div class="mb-8">
@@ -508,12 +508,12 @@ export const servicesBlogs = [
   },
   {
     id: 8,
-    title: "Cloud Computing: Scalable, Secure, and Smarter",
-    serviceId: 8,
+    title: "Scalable, Secure, and Smarter",
+    service: "Cloud Computing",
     image: require("./assets/images/blogs/CM 1.webp"),
     html: `
               <div class="p-6 bg-white rounded-lg shadow-md">
-                <h1 class="text-2xl font-bold text-gray-800 mb-4">Cloud Computing: Scalable, Secure, and Smarter</h1>
+                <h1 class="text-2xl font-bold text-gray-800 mb-4">Scalable, Secure, and Smarter</h1>
                 <p class="text-gray-600 mb-6">Cloud technology is the backbone of modern digital transformation. At AWD Infotech, we offer cutting-edge cloud solutions for seamless scalability, flexibility, and security.</p>
                 
                 <div class="mb-8">
@@ -549,12 +549,12 @@ export const servicesBlogs = [
   },
   {
     id: 9,
-    title: "Data Science: Unlocking the Power of Insights",
-    serviceId: 9,
+    title: "Unlocking the Power of Insights",
+    service: "Data Science",
     image: require("./assets/images/blogs/DC1.webp"),
     html: `
               <div class="p-6 bg-white rounded-lg shadow-md">
-                <h1 class="text-2xl font-bold text-gray-800 mb-4">Data Science: Unlocking the Power of Insights</h1>
+                <h1 class="text-2xl font-bold text-gray-800 mb-4">Unlocking the Power of Insights</h1>
                 <p class="text-gray-600 mb-6">Data is the new gold. At AWD Infotech, we help businesses transform raw data into actionable intelligence with AI-driven data science solutions.</p>
                 
                 <div class="mb-8">
@@ -590,13 +590,12 @@ export const servicesBlogs = [
   },
   {
     id: 10,
-    title:
-      "Natural Language Processing (NLP): The AI Behind Human Conversations",
-    serviceId: 10,
+    title: "The AI Behind Human Conversations",
+    service: "Natural Language Processing",
     image: require("./assets/images/blogs/NLP 1.webp"),
     html: `
               <div class="p-6 bg-white rounded-lg shadow-md">
-                <h1 class="text-2xl font-bold text-gray-800 mb-4">Natural Language Processing (NLP): The AI Behind Human Conversations</h1>
+                <h1 class="text-2xl font-bold text-gray-800 mb-4">The AI Behind Human Conversations</h1>
                 <p class="text-gray-600 mb-6">Language is evolving with AI. At AWD Infotech, we build NLP-powered solutions that enhance communication, automate processes, and improve customer experiences.</p>
                 
                 <div class="mb-8">
@@ -632,12 +631,12 @@ export const servicesBlogs = [
   },
   {
     id: 11,
-    title: "Cloud Migration: Future-Proof Your Business",
-    serviceId: 11,
+    title: "Future-Proof Your Business",
+    service: "Cloud Migration",
     image: require("./assets/images/blogs/CM 1.webp"),
     html: `
                     <div class="p-6 bg-white rounded-lg shadow-md">
-                      <h1 class="text-2xl font-bold text-gray-800 mb-4">Cloud Migration: Future-Proof Your Business</h1>
+                      <h1 class="text-2xl font-bold text-gray-800 mb-4">Future-Proof Your Business</h1>
                       <p class="text-gray-600 mb-6">Legacy systems can't keep up with today's digital demands. At AWD Infotech, we help businesses transition to the cloud for improved performance, security, and scalability.</p>
                       
                       <div class="mb-8">
@@ -673,12 +672,12 @@ export const servicesBlogs = [
   },
   {
     id: 12,
-    title: "Experience Design: Crafting Human-Cantered Digital Journeys",
-    serviceId: 12,
+    title: "Crafting Human-Cantered Digital Journeys",
+    service: "UI/UX Design",
     image: require("./assets/images/blogs/UIUX 1.webp"),
     html: `
         <div class="p-6 bg-white rounded-lg shadow-md">
-          <h1 class="text-2xl font-bold text-gray-800 mb-4">Experience Design: Crafting Human-Cantered Digital Journeys</h1>
+          <h1 class="text-2xl font-bold text-gray-800 mb-4">Crafting Human-Cantered Digital Journeys</h1>
           <p class="text-gray-600 mb-6">User experience is the heart of digital innovation. At AWD Infotech, we create intuitive, engaging, and accessible designs that elevate customer experiences.</p>
           
           <div class="mb-8">
