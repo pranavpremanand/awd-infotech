@@ -19,7 +19,7 @@ const Industries = () => {
   return (
     <>
       <WebsiteHeader />
-      <PageBanner title="Industries We Serve" />
+      <PageBanner title="Industries We Serve" showContactUsBtn={true} />
       <section className="py-14">
         <div className="wrapper">
           <div className="text-center mb-12">
