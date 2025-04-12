@@ -42,9 +42,9 @@ const LandingPage = ({ page }) => {
       <LandingHeader />
       <section
         id="banner"
-        className="h-screen banner-video relative text-primary_text"
+        className="h-screen banner-video relative text-white"
       >
-        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background/40 to-background/40"></div>
+        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-black/55 to-black/55 backdrop-blur-[2px]"></div>
         <ReactPlayer
           url={banner}
           playing
@@ -65,20 +65,20 @@ const LandingPage = ({ page }) => {
         />
         <div
           data-aos="fade-up"
-          className="wrapper text-center flex flex-col gap-4 text-white justify-center items-center absolute inset-0 h-full w-full z-10"
+          className="wrapper pt-[3rem] text-center flex flex-col gap-4 text-white justify-center items-center absolute inset-0 h-full w-full z-10"
         >
-          <p className="sub-heading !font-normal">
+          <p className="sub-heading !font-normal !text-white">
             Your Trusted Partner in{" "}
-            <span className="text-primary font-bold block sm:inline">
+            <span className="text-secondary font-bold block sm:inline">
               Digital Transformation
             </span>
           </p>
-          <h1 className="heading text-stroke-white !text-primary">
+          <h1 className="heading !text-white">
             {isWebLanding
               ? "Web Experiences Designed for Your Business Goals"
               : "Mobile Solutions Built Around Your Users"}
           </h1>
-          <p className="sub-heading !font-normal">
+          <p className="sub-heading !font-normal !text-white">
             {isWebLanding
               ? "From concept to conversion - we build websites that work as hard as you do"
               : "Where innovative technology meets exceptional user experiences"}

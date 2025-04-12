@@ -42,7 +42,7 @@ const Industries = () => {
                 <div className="w-full grid sm:grid-cols-[45%,1fr] items-center gap-4 p-4 border border-secondary rounded-xl bg-secondary/10">
                   <img
                     src={item.img}
-                    className="aspect-[4/3] h-full object-cover rounded-xl border border-secondary"
+                    className="aspect-[4/3] max-h-[50vh] object-cover rounded-xl border border-secondary"
                     alt={item.title}
                     loading="lazy"
                   />
