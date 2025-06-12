@@ -28,6 +28,8 @@ const AIConsultation = () => {
     register,
     handleSubmit,
     reset,
+    setValue,
+    setError,
     formState: { errors, isSubmitting },
   } = useForm({
     mode: "all",
@@ -66,6 +68,8 @@ const AIConsultation = () => {
       if (res.data.success) {
         toast.success("Consultation request sent successfully");
         reset();
+        setSelectedSlot("");
+        navigate("/thank-you");
       } else {
         toast.error(res.data.error);
       }
@@ -78,6 +82,9 @@ const AIConsultation = () => {
 
   const handleSlotChange = (slot) => {
     setSelectedSlot(slot);
+    // Update the form value for consultationSlot
+    setValue("consultationSlot", slot);
+    setError("consultationSlot", null);
   };
 
   return (
@@ -457,7 +464,7 @@ const AIConsultation = () => {
 
               <div className="flex flex-col gap-2 mb-8">
                 <label className="text-sm font-medium ml-2 text-primary_text">
-                  Preferred Consultation Slot
+                  Preferred Consultation Slot *
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-2">
                   {[
@@ -484,9 +491,13 @@ const AIConsultation = () => {
                 </div>
                 <input
                   type="hidden"
-                  value={selectedSlot}
-                  {...register("consultationSlot")}
+                  {...register("consultationSlot", {
+                    required: "Please select a consultation slot",
+                  })}
                 />
+                <small className="error-message ml-2">
+                  {errors.consultationSlot?.message}
+                </small>
               </div>
 
               <button

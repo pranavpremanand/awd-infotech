@@ -69,7 +69,8 @@ export const companyDetails = {
   phone: "919535855717",
   address:
     "CB1604 Salarpuria Greenage Bommanahalli Hosur road Bangalore 560068",
-  email: "techsolutions@awdinfotech.com",
+  email: "mpranavprem@gmail.com",
+  // email: "techsolutions@awdinfotech.com",
   linkedin: "",
   instagram: "",
   twitter: "",
