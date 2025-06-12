@@ -671,7 +671,7 @@ export const allServices = [
   {
     id: 1,
     title: "Web Development",
-    landingPageUrl: "/web-development",
+    landingPageUrl: "/experience-design",
     description:
       "We build more than just websites—we create digital experiences that are crafted to perform.",
     icon: FaCode,
@@ -692,7 +692,7 @@ export const allServices = [
   {
     id: 2,
     title: "App Development",
-    landingPageUrl: "/app-development",
+    landingPageUrl: "/experience-design",
     description:
       "We specialize in creating custom mobile applications that are user-friendly, feature-rich, and tailored to your specific goals.",
     icon: FaMobileAlt,
@@ -755,27 +755,27 @@ export const allServices = [
       <br/>
       <p>From mobile games to AAA titles, we are committed to delivering high-quality games that resonate with players and stand out in the market.</p>`,
   },
-  {
-    id: 5,
-    title: "Robotic Process Automation (RPA)",
-    landingPageUrl: "/rpa-development",
-    description:
-      "We automate repetitive tasks and business processes to increase efficiency and reduce operational costs.",
-    icon: FaRobot,
-    detailHeading: "RPA: Streamlining Business Processes Through Automation",
-    detailContent: `<p>Robotic Process Automation (RPA) allows businesses to automate repetitive, rule-based tasks, freeing up human resources for more strategic work. Our RPA solutions help organizations:</p>
-      <br/>
-      <ol>
-        <li><b>Process Automation:</b><br/>Identify and automate repetitive tasks across various departments including finance, HR, and customer service.</li>
-        <br/>
-        <li><b>Integration with Legacy Systems:</b> <br/> Connect modern RPA solutions with your existing systems without costly infrastructure changes.</li>
-        <br/>
-        <li><b>Continuous Improvement:</b><br/> Our bots learn and adapt over time, continuously improving process efficiency and accuracy.</li>
-      </ol>
-      <br/>
-      <br/>
-      <p>We implement RPA solutions that deliver measurable ROI by reducing errors, increasing speed, and lowering operational costs.</p>`,
-  },
+  // {
+  //   id: 5,
+  //   title: "Robotic Process Automation (RPA)",
+  //   landingPageUrl: "/rpa-development",
+  //   description:
+  //     "We automate repetitive tasks and business processes to increase efficiency and reduce operational costs.",
+  //   icon: FaRobot,
+  //   detailHeading: "RPA: Streamlining Business Processes Through Automation",
+  //   detailContent: `<p>Robotic Process Automation (RPA) allows businesses to automate repetitive, rule-based tasks, freeing up human resources for more strategic work. Our RPA solutions help organizations:</p>
+  //     <br/>
+  //     <ol>
+  //       <li><b>Process Automation:</b><br/>Identify and automate repetitive tasks across various departments including finance, HR, and customer service.</li>
+  //       <br/>
+  //       <li><b>Integration with Legacy Systems:</b> <br/> Connect modern RPA solutions with your existing systems without costly infrastructure changes.</li>
+  //       <br/>
+  //       <li><b>Continuous Improvement:</b><br/> Our bots learn and adapt over time, continuously improving process efficiency and accuracy.</li>
+  //     </ol>
+  //     <br/>
+  //     <br/>
+  //     <p>We implement RPA solutions that deliver measurable ROI by reducing errors, increasing speed, and lowering operational costs.</p>`,
+  // },
   {
     id: 6,
     title: "Artificial Intelligence",

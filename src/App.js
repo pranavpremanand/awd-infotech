@@ -41,6 +41,7 @@ const UIUXLanding = lazy(() =>
 const AgenticAILanding = lazy(() =>
   import("./pages/landingpages/AgenticAILanding")
 );
+const AIConsultation = lazy(() => import("./pages/AIConsultation"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 const BlogDetails = lazy(() => import("./pages/BlogDetails"));
 
@@ -79,14 +80,14 @@ function App() {
             <Route path="/blog/:title" element={<BlogDetails />} />
 
             {/* Landing pages */}
-            <Route
+            {/* <Route
               path="/web-development"
               element={<LandingPage page={"web-development"} />}
             />
             <Route
               path="/app-development"
               element={<LandingPage page={"app-development"} />}
-            />
+            /> */}
             <Route
               path="/blockchain-development"
               element={<BlockchainLanding />}
@@ -95,7 +96,7 @@ function App() {
               path="/game-development"
               element={<GameDevelopmentLanding />}
             />
-            <Route path="/rpa-development" element={<RPALanding />} />
+            {/* <Route path="/rpa-development" element={<RPALanding />} /> */}
             <Route path="/ai-development" element={<AILanding />} />
             <Route path="/ml-development" element={<MLLanding />} />
             <Route
@@ -109,12 +110,16 @@ function App() {
               element={<CloudMigrationLanding />}
             />
             <Route
-              path="/ui-ux-design"
+              path="/experience-design"
               element={<UIUXLanding />}
             />
             <Route
               path="/agentic-ai"
               element={<AgenticAILanding />}
+            />
+            <Route
+              path="/ai-consultation"
+              element={<AIConsultation />}
             />
           </Routes>
         </Router>
